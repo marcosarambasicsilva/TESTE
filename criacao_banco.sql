@@ -6,7 +6,7 @@ CREATE TABLE users
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL,
-    phone TEXT UNIQUE NOT NULL
+    phone VARCHAR(11) UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
     photo_url TEXT,
     bio TEXT,
